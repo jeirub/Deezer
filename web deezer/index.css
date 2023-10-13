@@ -173,42 +173,40 @@ body {
 
 #como_funciona img{
     margin: 0;
-    width: 70%; /* Tamaño máximo del logotipo */
+    width: 80%; /* Tamaño máximo del logotipo */
 
 }
 #como_funciona .container{
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    flex-direction: column;
+    background-color: #ffffff;
     height: 120vh;
-
+    margin: 1px;
 }
 
 #como_funciona .grid-container{
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 25px);
+    grid-template-rows: repeat(1, 25px);
     gap: 1px;
     justify-content: center;
+    width: 90%;
 
 }
 #como_funciona .grid-item{
 
-    border: 1px solid #ffffff;
+    display: inline;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 6px;
-
+    height: 2px;
+    margin: 10.244px;
 }
 #como_funciona h2{
     color: #685DF6;
 }
 
-#como_funcionap{
+#como_funciona p{
 
     display: flex;
     justify-content: center;
@@ -219,7 +217,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px; /* 121.429% */
-    height: 0.133vh;
+    height: 13.3vh;
 
 }
 
@@ -267,15 +265,14 @@ body {
     background-color: #1EE5B8;
 }
 
+#conoce_celestino .container{
 
-#conoce_celestino .img_container{
-
-    display: block;
+    display: flex;
     align-items: center;
-    text-align: center;
     justify-content: flex-start;
-    flex-direction: row;
-
+    text-align: center;
+    flex-direction: column;
+    height: 220vh;
 }
 
 #conoce_celestino p{
@@ -291,6 +288,39 @@ body {
     position: static center;
     margin: 30px auto;
 }
+
+.container_new{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    height: 0%;
+
+}
+
+.container_flow{
+
+    display:inline-table;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 0%;
+
+
+}
+.container_chill{
+    display:inline-block;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+    height: 0%;
+
+
+}
+
 
 #escucha_favoritos .container{
 
@@ -356,7 +386,7 @@ body {
     justify-content: center;
 
 }
-.grid-item{
+#sincronizar .grid-item{
 
     border: 1px solid #ffffff;
     align-items: center;
@@ -365,7 +395,7 @@ body {
 
 }
 
-.grid-item img{
+#sincronizar .grid-item img{
 
     background-color: #ffffff;
     border: 1px solid #ffffff;
