@@ -17,7 +17,7 @@ nav ul {
 nav ul li { 
 
     display: inline; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
-    margin-left: 2%; /* Espaciado entre elementos del menú */
+    margin-left: 20%; /* Espaciado entre elementos del menú */
 } 
    
 nav ul li a {
@@ -120,8 +120,7 @@ body {
     padding: 10px 20.564px 10px 20.906px;
     margin-left: 10px; 
     margin-right: 10px;
-    border-radius: 30px;
-    
+    border-radius: 30px
   
 }
 
@@ -151,7 +150,12 @@ body {
     height: 60vh;
     background-color: #1EE5B8;
 }
+#comofunciona 
+{
+    display: flex;
 
+
+}
 #comofunciona h1{
 
     color: #000;
@@ -166,37 +170,59 @@ body {
     
 
 }
-#comoFunciona h2{
-    color: #685DF6;
-}
 
-#comoFunciona .container{
+#como_funciona img{
+    margin: 0;
+    width: 70%; /* Tamaño máximo del logotipo */
+
+}
+#como_funciona .container{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     flex-direction: column;
-    height: 133vh;
+    height: 120vh;
 
 }
 
-#comoFunciona p{
+#como_funciona .grid-container{
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25px);
+    gap: 1px;
+    justify-content: center;
+
+}
+#como_funciona .grid-item{
+
+    border: 1px solid #ffffff;
+    align-items: center;
+    text-align: center;
+    margin: 6px;
+
+}
+#como_funciona h2{
+    color: #685DF6;
+}
+
+#como_funcionap{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #52525D;
     text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
     font-style: normal;
+    font-size: 14px;
     font-weight: 400;
     line-height: 17px; /* 121.429% */
     height: 0.133vh;
+
 }
 
-#sin_anuncios img{
-    margin: 0;
-    max-width: 100%; /* Tamaño máximo del logotipo */ 
-}
 
 #elegirDeezer{
 
@@ -209,10 +235,26 @@ body {
     background-color: #1EE5B8;
 }
 
-#descubrimientos img{
+
+#sin_anuncios img{
     margin: 0;
     max-width: 100%; /* Tamaño máximo del logotipo */ 
 }
+
+#sin_anuncios p{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 400px;
+    height: 10vh;
+    font-size: x-large;
+    position: static center;
+    
+}
+
 
 #escucha_musica .container{
 
@@ -224,6 +266,32 @@ body {
     height: 60vh;
     background-color: #1EE5B8;
 }
+
+
+#conoce_celestino .img_container{
+
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+#conoce_celestino p{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 400px;
+    height: 10.5vh;
+    font-size: x-large;
+    position: static center;
+    margin: 30px auto;
+}
+
 #escucha_favoritos .container{
 
     display: flex;
@@ -233,6 +301,38 @@ body {
     flex-direction: column;
     height: 60vh;
     background-color: #1EE5B8;
+}
+
+#descubrimientos .container{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 200vh;
+    width: 100%;
+    
+}
+
+#descubrimientos  img{
+    max-width: 100%; /* Tamaño máximo del logotipo */ 
+}
+#descubrimientos p{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:  center center;
+    vertical-align: middle;
+    width: 400px;
+    height: 10vh;
+    font-size: x-large;
+    position: static center;
+    margin: 40px;
+}
+#descubrimientos .buttons{
+    margin: 40px;
+    height: 10vh;
 }
 
 #letra_correcta{
@@ -247,29 +347,164 @@ body {
 
 }
 
-#sincronizar .img_container{
+#sincronizar .grid-container{
 
-    display: flex;
-    width: 245px;
-    height: 245px;
-    padding: 39.5px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 255px);
+    gap: 1px;
+    justify-content: center;
+
+}
+.grid-item{
+
+    border: 1px solid #ffffff;
+    align-items: center;
+    text-align: center;
+    margin: 6px;
+
+}
+
+.grid-item img{
+
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    padding: 5px;
     align-items: center;
     border-radius: 40px;
-    background: rgba(255, 255, 255, 0.00);
+    text-align: flex-end;
+    margin: 1px;
+    width: 200px;
+    height: 210px;
+    border-radius: 40px;
     box-shadow: 0px 0px 20px 0px #D2D2D2;
     margin: 10px;
 }
 
 #sincronizar p{
 
-    max-width: 245px;
-    color: #52525D;
+    display: flex;
+    align-items: center;
     text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    justify-content: flex-end;
+    justify-content:  center center;
+    vertical-align: middle;
+    width: 400px;
+    height: 20vh;
+    font-size: x-large;
+    position: static center;
+}
+#faq {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: #1EE5B8;
+
+}
+#final .botonApp{
+
+    width: 134.61px;
+    height: 44.996px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/appStore.jpg);
+    margin: 10px;
+
+}
+#final .botonGoogle{
+
+    width: 151.875px;
+    height: 45px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/googlePlay.jpg);
+
+}
+#final ul{
+
+    display: flex;
+    list-style: none; /* Eliminar viñetas de la lista */ 
+    justify-content: space-between;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center ;
+
+}
+#final ul .container{
+    display: flex;
+    height: 423.86px;
+    width: 22.5em;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: stretch;
+    font-size: 10px;
+}
+
+#final ul li { 
+
+    display: inline; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    margin-left: 2%; /* Espaciado entre elementos del menú */
+} 
+
+#final ul li a {
+    
+    align-items: flex-start;
+    text-decoration: none; /* Eliminar subrayado de enlaces */ 
+    color: #000000; /* Color del texto del menú */ 
+    font-weight: bold; 
+}
+
+#social .red_social{
+
+    display: flex;
+    width: auto;
+    height: 10hv;
+    justify-content: end;
+    margin: 10%;
+    flex-direction: row-reverse;    
+
+}
+
+footer{
+   
+    display: inline-flex; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    list-style: none; /* Eliminar viñetas de la lista */ 
+    justify-content: space-between;
+    height: 10vh;
+    margin: 10%;
+    margin-left: 200px; /* Espaciado entre elementos del menú */
+
+}
+
+.redes-sociales {
+
+    text-align: flex-start; /* Alinea los iconos horizontalmente en el centro */
+    margin: auto;
+    background-color: #ffffff; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: start; /* Alineación del texto en el centro */
+    padding: 20px; /* Espaciado interno para el footer */
+    justify-content: end;
+
+}
+
+.red-social {
+
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Cambia el color de los iconos a negro */
+    margin: 10px; /* Espacio entre los iconos */
+
+}
+footer p{
+
+    display: flex; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    justify-content: space-between;
+    height: 1px;
+    margin: auto;
+    margin-left: 360px; /* Espaciado entre elementos del menú */
 }
