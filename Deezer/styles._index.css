@@ -1,0 +1,556 @@
+body{
+    background-image: url(./images/6.jpg); 
+    background-size: 1300px 800px;
+    background-repeat: no-repeat;    
+}
+
+
+nav ul { 
+
+    display: flex;
+    list-style: none; /* Eliminar viñetas de la lista */ 
+    justify-content: space-between;
+} 
+   
+nav ul li { 
+
+    display: inline; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    margin-left: 2%; /* Espaciado entre elementos del menú */
+} 
+   
+nav ul li a {
+    text-decoration: none; /* Eliminar subrayado de enlaces */ 
+    color: #000000; /* Color del texto del menú */ 
+    font-weight: bold; 
+}
+
+header{
+
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    background: #ffffff;
+    align-items: start;
+    align-self: stretch;
+    background-color: #ffffff;
+    color: #000000;
+    align-items: center;
+    padding:  2px 70px 2px 70px;
+    min-height: 70px;
+}
+
+header a{
+    padding: 5px 12px;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+header a:hover{
+    color: #EF5466;
+}
+
+button{
+
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 10px #000;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+button:hover{
+    background-color: #ffffff9f;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 0 auto 20px;
+    width: 600px;
+    
+    
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-size: 25px
+}
+
+h4{
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-default,"Roboto","Arial","sans-serif");
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22px;
+    margin: 30px auto 0;
+    text-align: center;
+    width: 310px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(248, 248, 250);
+    border: 40px;
+    cursor: pointer;
+    background: linear-gradient(109deg, #1EE5B8 0%, #4384FF 48.96%, #AD00FF 94.27%);
+
+ 
+
+}
+
+.switch::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(67, 44, 159);
+    left: 5px;
+    top: 5px;
+    transition: all 0.4s;
+    
+    
+
+}
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translatex(40px);
+    background-color: rgb(33, 6, 123);
+    
+}
+
+input[type='checkbox']:checked + .switch{
+    background-color: write;
+    
+}
+
+.offscreen{
+    position: absolute;
+    left: -9999999px;
+    
+}
+.principal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mensual{
+    text-align: center;
+    display: flex;
+    width: 218.31px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 256px;
+    background: #EBE7EE;
+    flex-direction: column;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    border: 50px;
+    border-radius: 50px;
+    padding: auto;
+}
+
+div.toggle-active{
+border: 256px;
+padding: 9px 16px 15.8px 9px;
+display: flex;
+width: 109.83px;
+height: 32px;
+padding: 9px 15.8px 9px 16px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 256px;
+background: linear-gradient(106deg, #1EE5B8 0%, #4384FF 48.96%, #AD00FF 94.27%);
+}
+
+div.toggle{
+border: 256px;
+padding: 8px;
+display: flex;
+width: 218.31px;
+padding: 8px;
+justify-content: center;
+align-items: center;
+border-radius: 256px;
+background: #EBE7EE;
+}
+
+
+.email-button {    
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.prueba{
+    text-align: center;
+    color: black;
+    letter-spacing: -1px;
+    font-family: var(--font-deezer, "Deezer","Arial",sans-serif);
+    font-weight: 700;
+}
+
+.text{
+    color: black;
+    text-align:center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 50px; /* Espacio entre las celdas */
+    height: 30vh; /* Altura de la cuadrícula al 100% del viewport */
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 15px;    
+    text-align: center;
+}
+
+
+.grid-item:nth-child(odd) {
+    background-color:white
+
+}
+
+.elegir{
+    text-align:center;
+    color:var(--color-text-secondary);
+    font-family: var(--font-default, "Roboto", "Arial", sans-serif);
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+#sin_anuncios img{
+    margin: 0;
+    max-width: 100%; /* Tamaño máximo del logotipo */ 
+}
+
+
+
+
+.titulo{
+    color: var(--color--text--main);
+    margin: 0 auto 90px;
+    padding: 0 220px;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: -1px;
+    font-family: var(--font-deezer,"Deezer","Arial",sans-serif);
+    font-weight: 700;
+}
+
+.elegir2{
+    text-align:center;
+    color:var(--color-text-secondary);
+    font-family: var(--font-default, "Roboto", "Arial", sans-serif);
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.descubrir{
+    text-align: center;
+}
+
+.paragrafo{
+    display: flex;
+    min-height: 54px;
+    padding: 8px 33.485px 8px 60.685px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 256px;
+    border: 1px solid #ffffff;
+    background-color: rgba(0,0,0,0);
+    border-color: var(--color-border-neutral-primary);
+    color: var(--color-text-main);   
+
+}
+
+.elegir3{
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    padding: 5%;
+    
+
+}
+
+.conductores{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.vermas{
+    padding: 30px 0 60px;
+    text-align: center;
+    width: 100%;
+    color: red;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.especial{
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 30px 210px;
+    text-align: right;
+    width: 60%;
+    font-family: var(--font-deezer,"Deezer","Arial",sans-serif);
+}
+
+.texto1{
+    color: black;
+    text-align: right;
+    font-size: 80px;
+    letter-spacing: -1px;
+    line-height: 80px;
+}
+
+.botondescubre{
+    display: inline-block;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto en negro */
+    padding: 0px 30px;
+    text-decoration: none;
+    border: 2px solid #000; /* Borde negro de 2 píxeles */
+    border-radius: 40px;
+    font-size: 16px;
+    text-align:justify;
+      
+}
+
+.elegir5{
+    text-align: center;
+}
+
+.faq{
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.items{
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    width: 100%;
+    text-align:left; 
+          
+}
+
+.segundario{
+    background-image: url(./images/6.jpg);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 1300px 1000px;
+}
+.mensua{
+    text-align: center;
+    display: flex;
+    width: 218.31px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 256px;
+    background: #EBE7EE;
+    flex-direction: column;
+}
+   
+  
+.informacion{
+    text-align: center;
+    display: flex;
+    width: 1142.122px;
+    height: 14px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #52525D;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+}
+
+
+#descubrimientos img{
+    margin: 0;
+    max-width: 100%; /* Tamaño máximo del logotipo */ 
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual ancho */
+    gap: 2px; /* Espacio entre las columnas */
+    text-align: center;
+}
+
+/* Estilo de las columnas */
+.column {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.boton-enlace {
+    
+    
+    padding: 10px 20px;
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #090909; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border: 1px solid #090909; /* Borde del botón */
+    border-radius: 15px; /* Bordes redondeados */
+    font-weight: bold;
+}
+
+/* Estilo del botón al pasar el cursor por encima (hover) */
+.boton-enlace:hover {
+    background-color: #a7a8a8; /* Cambia el color de fondo al pasar el cursor por encima */
+    border: 2px solid #060606; /* Cambia el color del borde al pasar el cursor por encima */
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+}
+
+#final .botonGoogle{
+
+    width: 151.875px;
+    height: 45px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/googlePlay.jpg);
+
+}
+#final ul{
+
+    display: flex;
+    list-style: none; /* Eliminar viñetas de la lista */ 
+    justify-content: space-between;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center ;
+
+}
+#final ul .container{
+    display: flex;
+    height: 423.86px;
+    width: 22.5em;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: stretch;
+    font-size: 10px;
+}
+
+#final ul li { 
+
+    display: inline; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    margin-left: 2%; /* Espaciado entre elementos del menú */
+} 
+
+#final ul li a {
+    
+    align-items: flex-start;
+    text-decoration: none; /* Eliminar subrayado de enlaces */ 
+    color: #000000; /* Color del texto del menú */ 
+    font-weight: bold; 
+}
+
+#social .red_social{
+
+    display: flex;
+    width: auto;
+    height: 10hv;
+    justify-content: end;
+    margin: 10%;
+    flex-direction: row-reverse;    
+
+}
+
+footer{
+   
+    display: inline-flex; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    list-style: none; /* Eliminar viñetas de la lista */ 
+    justify-content: space-between;
+    height: 10vh;
+    margin: 10%;
+    margin-left: 200px; /* Espaciado entre elementos del menú */
+
+}
+
+.redes-sociales {
+
+    text-align:flex-start; /* Alinea los iconos horizontalmente en el centro */
+    margin: auto;
+    background-color: #ffffff; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: start; /* Alineación del texto en el centro */
+    padding: 20px; /* Espaciado interno para el footer */
+    justify-content: end;
+
+}
+
+.red-social {
+
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Cambia el color de los iconos a negro */
+    margin: 10px; /* Espacio entre los iconos */
+
+}
+footer p{
+
+    display: flex; /* Mostrar elementos de la lista en línea (uno al lado del otro) */ 
+    justify-content: space-between;
+    height: 1px;
+    margin: auto;
+    margin-left: 360px; /* Espaciado entre elementos del menú */
+}
+
+.googleapp{
+    text-align: center;
+    
+    
+}
+
